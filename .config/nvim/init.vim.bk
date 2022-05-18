@@ -1,0 +1,110 @@
+if &compatible
+    set nocompatible
+endif
+
+source ~/AppData/Local/nvim/plugins.init.vim "まずプラグインを読み込む
+source ~/AppData/Local/nvim/keymaps.vim
+let init= split(glob( "~/AppData/Local/nvim/init/" . "*.vim" ))
+
+echo "init files load starting..."
+for file in init
+	echo "load " . file
+	execute 'source' file
+endfor
+
+
+let keymap = split(glob("~/AppData/Local/nvim/keymaps/" . "*.vim"))
+
+echo "keymap files load starting..."
+for file in keymap
+	echo "load " . file
+	execute 'source' file
+endfor
+
+"設定ファイルを読み込む
+" runtime init/plugins.init.vim
+" runtime init/coc.init.vim
+" runtime init/treesitter.init.vim
+" runtime init/airline.init.vim
+" runtime init/fern.init.vim
+" runtime init/bookmarks.init.vim
+" runtime init/telescope.init.vim
+" runtime init/background.vim
+" runtime keymaps/keymaps.vim
+" runtime keymaps/fern.keymaps.vim
+" runtime keymaps/coc.keymaps.vim
+" runtime keymaps/treesitter.keymaps.vim
+" runtime keymaps/telescope.keymaps.vim
+"coc.vim上でpwshを使うための設定
+
+ if has("win32")
+   set shell=pwsh
+   set shellcmdflag=-c
+   set shellquote=\"
+   set shellxquote=
+ endif
+"set shellslash "plug　がshellslash対応していないので無効化
+
+"vscodeで使わない設定については以下に記述
+if !exists('g:vscode')
+    "========表示設定==========
+    set number
+    set title
+    set showmatch
+    set novisualbell
+    set laststatus=2 "画面下部のステータスバーの表示設定
+    set ruler
+    set wildmode=list:longest
+	set pumblend=20
+	set wildoptions=pum
+    set wildmenu
+    set showcmd
+    set foldmethod=syntax
+    set cursorline
+	
+
+    "======文字、カーソル設定=========
+    "set ambiwidth=double "全角文字の表示。vim-airlineの表記が崩れるので無効
+    set encoding=utf-8
+    "set termencoding=cp932
+    set fileencoding=utf-8
+    "set fileencodings=utf-8,ucs-bom,iso-2022-jp,euc-jp,sjis,cp932
+    set tabstop=4
+    set shiftwidth=4
+    set autoindent
+    set smartindent
+    set list
+    set listchars=tab:»-,trail:_,eol:↲,extends:»,precedes:«,nbsp:% "改行文字やtabなどを表示
+    set whichwrap=b,s,h,l,<,>,[,],~
+    set backspace=indent,eol,start
+    set autochdir
+    "let &t_ti.="\e[5 q"
+    set scrolloff=8
+    set sidescrolloff=16
+    set sidescroll=1
+    set textwidth=0
+    set clipboard=unnamed,unnamedplus
+	"set pastetoggle=<C-E> "coc.nvimでサジェスチョン無視でのモード移動バグのため無効に
+	set nofixendofline "vimによるEOF編集を無効化
+	set hidden "バッファを未保存で移動しても警告を出さない
+
+	"======検索設定============
+	set ignorecase
+	set smartcase
+	set wrapscan"検索で最後の行に来た後に初めに戻る
+	set hlsearch"検索結果をハイライトする
+	set incsearch
+	nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+	"=======マウス設定==========
+	set mouse=a
+	"set ttymouse=xterm2
+
+	"コピー
+	set guioptions=+a
+
+	"==============
+	set history=10000
+    
+end
+syntax on "透過設定の後ろでないと動かない
