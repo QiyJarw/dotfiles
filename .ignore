@@ -1,0 +1,5 @@
+.local
+.cache
+.git-credentials
+.ssh
+.sudo_as_admin_successful

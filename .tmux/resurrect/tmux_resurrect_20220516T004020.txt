@@ -1,0 +1,7 @@
+pane	0	0	1	:*	0	layout.tsx (~/dev/js/nextjs/components) - NVIM	:/home/qiy/dev/js/nextjs	1	nvim	:nvim
+pane	0	0	1	:*	1	QiysPC	:/home/qiy/dev/js/nextjs	0	zsh	:
+pane	0	0	1	:*	2	QiysPC	:/home/qiy/dev/js/nextjs	0	zsh	:
+pane	0	1	0	:-	0	QiysPC	:/home/qiy/dotfiles	1	zsh	:sh
+window	0	0	:dev	1	:*	4030,209x51,0,0{121x51,0,0,1,87x51,122,0[87x10,122,0,2,87x40,122,11,3]}	off
+window	0	1	:config	0	:-	b521,209x51,0,0,4	off
+state	0	

@@ -1,0 +1,68 @@
+##空行追加
+add_newline=true
+
+#フォーマット
+format = """
+$custom$username$time[$directory$deno$rust$java$dotnet$nodejs$python$cmake$git_branch$git_status](bg:#c20000)[](fg:#c20000)$character"""
+right_format = """$localip"""
+
+[character]
+success_symbol="[  ](bold green)"
+error_symbol="[  ](bold red)"
+
+[username]
+format='[  $user ](fg:white bg:#0062ff)[](fg:#0062ff bg:#009e22)'
+disabled = false
+show_always=true
+
+[time]
+format = '[ $time ](fg:white bg:#009e22)[](fg:#009e22 bg:#1E2127)'
+disabled=false
+time_format=' %T'
+
+[directory]
+format="[](fg:#1E2127 bg:#c20000)[  $path ](bg:#c20000)[$read_only](bg:#c20000)"
+
+[git_branch]
+format='[](bg:#c20000)[ $symbol$branch ](bg:#c20000)'
+
+[git_status]
+format='([\[$all_status$ahead_behind\]](fg:white bg:#c20000) )'
+[nodejs]
+format='$symbol'
+
+[deno]
+format='$symbol'
+
+[rust]
+format='$symbol'
+
+[python]
+format='$symbol'
+
+[java]
+format='$symbol'
+
+[localip]
+ssh_only = false
+format = "[](fg:#b500a6)[  $localipv4 ](bg:#b500a6)"
+disabled = false
+
+[custom.linux]
+command = "echo "
+os = "linux"
+when = "true"
+format = "[ $output ](bg:#404040 fg:white)[](fg:#404040 bg:#0062ff)"
+
+[custom.windows]
+command = "echo "
+os = "windows"
+when = "true"
+format = "[ $output ](bg:#404040 fg:white)[](fg:#404040 bg:#0062ff)"
+
+[custom.mac]
+command = "echo "
+os = "macos"
+when = "true"
+format = "[ $output ](bg:#404040 fg:white)[](fg:#404040 bg:#0062ff)"
+
