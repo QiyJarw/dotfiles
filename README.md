@@ -8,6 +8,6 @@ git clone https://github.com/Qiyjarw/dotfiles
 
 2. run setup script.
 ```sh=
-cd ./script
+cd ./scripts
 source setup.sh
 ```
