@@ -39,7 +39,7 @@ require('telescope').setup{
 	}
 
   },
-	ext = {
+	extensions = {
 		fzf = {
 			fuzzy = true
 		},
