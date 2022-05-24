@@ -16,9 +16,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # End of lines added by compinstall
 
 alias ls='exa --icons --git-ignore'
+alias lsg='exa --icons --git-ignore --git'
 alias ll='exa --icons --git-ignore -la'
+alias llg='exa --icons --git-ignore -la --git'
 alias lt='exa --icons  --git-ignore -TaL 2 '
-alias lta='exa --icons -Ta'
+alias lta='exa --icons -Ta --git'
 
 alias cls=clear
 
