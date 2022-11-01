@@ -3,9 +3,9 @@ add_newline=true
 
 #フォーマット
 format = """
-$custom$username$time[$directory$deno$rust$java$dotnet$nodejs$python$cmake$git_branch$git_status](bg:#c20000)[](fg:#c20000)$character"""
-right_format = """$localip"""
-
+$custom$username$time[$directory$deno$rust$java$dotnet$nodejs$python$cmake$git_branch$git_status](bg:#c20000)[](fg:#c20000)
+ └─$character"""
+# right_format = """$localip"""
 [character]
 success_symbol="[  ](bold green)"
 error_symbol="[  ](bold red)"
@@ -27,7 +27,8 @@ format="[](fg:#1E2127 bg:#c20000)[  $path ](bg:#c20000)[$read_only](bg:#c2
 format='[](bg:#c20000)[ $symbol$branch ](bg:#c20000)'
 
 [git_status]
-format='([\[$all_status$ahead_behind\]](fg:white bg:#c20000) )'
+deleted = "×"
+format='[\[$all_status\] ](fg:white bg:#c20000)'
 [nodejs]
 format='$symbol'
 
