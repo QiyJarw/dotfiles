@@ -1,7 +1,0 @@
-pane	0	0	1	:*Z	0	layout.tsx + (~/dev/js/nextjs/components) - NVIM	:/home/qiy/dev/js/nextjs	1	nvim	:nvim
-pane	0	0	1	:*Z	1	QiysPC	:/home/qiy/dev/js/nextjs	0	zsh	:
-pane	0	0	1	:*Z	2	QiysPC	:/home/qiy/dev/js/nextjs	0	zsh	:
-pane	0	1	0	:-	0	background.lua (~/dotfiles/.config/nvim/lua/plugins) - NVIM	:/home/qiy/dotfiles/.config/nvim	1	nvim	:nvim
-window	0	0	:dev	1	:*Z	6ebd,195x45,0,0{114x45,0,0,1,80x45,115,0[80x7,115,0,2,80x37,115,8,3]}	off
-window	0	1	:config	0	:-	c341,195x45,0,0,4	off
-state	0	

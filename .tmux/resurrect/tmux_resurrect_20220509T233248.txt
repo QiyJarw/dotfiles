@@ -1,5 +1,0 @@
-pane	0	0	1	:*	0	index.tsx (~/dev/js/nextjs/pages) - NVIM	:/home/qiy/dev/js/nextjs	1	nvim	:nvim
-pane	0	0	1	:*	1	QiysPC	:/home/qiy/dev/js/nextjs	0	zsh	:
-pane	0	0	1	:*	2	QiysPC	:/home/qiy/dotfiles	0	zsh	:
-window	0	0	:nvim	1	:*	ad02,209x48,0,0{119x48,0,0,0,89x48,120,0[89x8,120,0,3,89x39,120,9,2]}	:
-state	0	
